@@ -14,15 +14,15 @@ while user_input != '4':
 
     todo_list = []
     if user_input == '1':
-        items = input('Enter your list seprated by comma').split(',')
+        items = input('Enter your list seprated by comma: ').split(',')
         todo_list.extend(items)
         print('Items added: ', items)
     elif user_input == '2' and len(todo_list) > 1:
         print('Mark as done')
     elif user_input == '3':
         for l in todo_list:
-        print(l)
-    elif user_input == 'Exit':
+            print(l)
+    elif user_input == '4':
         print('Goodbye')
     else:
         print('Please enter one of 1, 2, 3, or 4')
